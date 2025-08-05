@@ -42,6 +42,17 @@ cd query-api-service/cdr
 - Run the application: ./mvnw spring-boot:run
 
 
+# Project Structure
+
+cdr/
+├── controller/
+├── dto/
+├── entity/
+├── repository/
+├── service/
+├── resources/
+└── pom.xml
+
 
 # Tech Stack
 
