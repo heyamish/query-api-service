@@ -1,0 +1,7 @@
+POST http://localhost:8080/api/v1/cdr/query
+Content-Type: application/json
+
+{
+  "record_date_start": "2023-08-18 10:30:00",
+  "record_date_end": "2023-08-18 10:31:00"
+}
