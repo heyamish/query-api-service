@@ -14,7 +14,34 @@
 - Written in Java 17 using Spring Boot
 - Fully functional with unit-tested endpoints
 
----
+
+# Setup Instruction
+
+- Clone the repository: git clone https://github.com/your-username/query-api-service.git
+cd query-api-service/cdr
+
+- Set up PostgreSQL:
+   - Create a database (example: cdr_db)
+   - Create the call_detail_records table (sample schema below)
+
+  CREATE TABLE IF NOT EXISTS call_detail_records (
+    id SERIAL PRIMARY KEY,
+    record_date TIMESTAMP NOT NULL,
+    msisdn VARCHAR(20),
+    imsi VARCHAR(20)
+  );
+
+ - Configure application.properties: In src/main/resources/application.properties, update:
+
+  spring.datasource.url=jdbc:postgresql://localhost:5432/cdr_db
+  spring.datasource.username=postgres
+  spring.datasource.password=db_password
+
+- Build the project: ./mvnw clean install
+
+- Run the application: ./mvnw spring-boot:run
+
+
 
 # Tech Stack
 
@@ -23,3 +50,4 @@
 - Spring Data JPA
 - PostgreSQL
 - Maven
+
