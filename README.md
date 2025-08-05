@@ -15,6 +15,18 @@
 - Fully functional with unit-tested endpoints
 
 
+# Project Structure
+
+cdr/
+├── controller/
+├── dto/
+├── entity/
+├── repository/
+├── service/
+├── resources/
+└── pom.xml
+
+
 # Setup Instruction
 
 - Clone the repository: git clone https://github.com/your-username/query-api-service.git
@@ -40,18 +52,6 @@ cd query-api-service/cdr
 - Build the project: ./mvnw clean install
 
 - Run the application: ./mvnw spring-boot:run
-
-
-# Project Structure
-
-cdr/
-├── controller/
-├── dto/
-├── entity/
-├── repository/
-├── service/
-├── resources/
-└── pom.xml
 
 
 # Tech Stack
