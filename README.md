@@ -1,4 +1,4 @@
-# Query API Service
+# What is Query API Service?
 
 - Query API Service is a Spring Boot based REST API that allows querying Call Detail Records (CDRs) stored in a PostgreSQL database. The API supports filtering records based on a date range, MSISDN, and IMSI through a single POST endpoint.
 
@@ -27,7 +27,7 @@ cdr/
 └── pom.xml
 
 
-# Setup Instruction
+# How to Setup?
 
 - Clone the repository: git clone https://github.com/your-username/query-api-service.git
 cd query-api-service/cdr
